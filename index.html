@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  charset="UTF-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1"> 
+	<title>Quantum Army</title>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+	<section id = "banner">
+		<img src="images/logo.png" class="logo">
+		<div class="banner-text">
+			<h1>Quantum Verse</h1>
+			<p>Into the Unknown</p>
+			<div class="banner-links">
+				<a href="#"><span></span>Read More</a>
+				<a href="#"><span></span>About Us</a>
+		</div>
+
+
+		
+	</section>
+
+	<div id="sideNav">
+		<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">FEATURES</a></li>
+			<li><a href="#">SERVICES</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+	    </nav>
+	</div>
+	<div id="menubtn">
+		<img src="images/menu.png" id="menu">
+	</div>
+	<script>
+		var menubtn = document.getElementById("menubtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+
+		sideNav.style.right="-250px";
+
+		menubtn.onclick = function(){
+			if(sideNav.style.right=="-250px"){
+				sideNav.style.right="0";
+			}
+			else{
+				sideNav.style.right="-250px";
+			}
+		}
+	</script>
+
+</body>
+</html>
